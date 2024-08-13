@@ -1,10 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Pessoal</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f0f2f5;
+        }
+
+        header {
+            background: #004d99;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        section .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-content {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .section-content:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #004d99;
+            text-decoration: underline;
+        }
+
+        .project {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+            color: #004d99;
+        }
+
+        .project p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .project a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            color: #004d99;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            section .container {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Pagina pessoal</h1>
+    <header>
+        <div class="container">
+            <h1>Otávio Esboriol da Silva</h1>
+        </div>
+    </header>
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="section-content">
+                <p>Olá! Sou um estudante do Senai, fascinado por TI e qualquer coisa sobre tecnologia no geral.</p>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <div class="section-content">
+                <p>Além de meus estudos, passo meu tempo livre:</p>
+                <ul>
+                    <li>Explorando novas tecnologias e tendências em TI.</li>
+                    <li>Lendo livros para expandir meu conhecimento e imaginação.</li>
+                    <li>Jogando video games para relaxar e me divertir.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do Projeto 1. No primeiro projeto foi feito um site utilizando JavaScript no curso no Senai com o professor Moisés. (Clique no "Veja mais" para abrir no GitHub)</p>
+                <a href="https://github.com/Esboriol/Algoritmos_JavaScript/tree/main/projeto_site" target="_blank">Veja mais</a>
+            </div>
+            <div class="project">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do Projeto 2. No segundo projeto, fizemos o mesmo site, porém utilizando a ferramenta Angular para criar o site de forma mais fácil e simples. (Clique no "Veja mais" para abrir no GitHub)</p>
+                <a href="https://github.com/Esboriol/Algoritmos_JavaScript/tree/main/homes-app-angular" target="_blank">Veja mais</a>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Você pode me encontrar nas redes sociais ou me enviar um e-mail.</p>
+            <ul>
+                <li><a href="mailto:otavioesboriol@gmail.com">otavioesboriol@gmail.com</a></li>
+                <li><a href="https://github.com/Esboriol" target="_blank">GitHub - Esboriol</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Otávio Esboriol da Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
