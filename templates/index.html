@@ -36,7 +36,7 @@
             padding: 3rem 0;
         }
 
-        section .container {
+        .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
@@ -60,13 +60,6 @@
             padding: 1.5rem 0;
             text-align: center;
             box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        .footer-content {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         footer p {
@@ -77,6 +70,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 0;
+            list-style: none;
         }
 
         .contact-list li {
@@ -85,14 +80,14 @@
         }
 
         .contact-list a {
-            color: #0066cc;
+            color: #000; /* Preto por padrão */
             text-decoration: none;
             transition: color 0.3s ease;
             font-weight: bold;
         }
 
         .contact-list a:hover {
-            color: #004d99;
+            color: #007bff; /* Azul claro no hover */
             text-decoration: underline;
         }
 
@@ -133,7 +128,7 @@
         }
 
         @media (max-width: 768px) {
-            section .container {
+            .container {
                 width: 95%;
             }
 
@@ -183,6 +178,11 @@
                 <p>Descrição breve do Projeto 2. No segundo projeto, fizemos o mesmo site, porém utilizando a ferramenta Angular para criar o site de forma mais fácil e simples. (Clique no "Veja mais" para abrir no GitHub)</p>
                 <a href="https://github.com/Esboriol/Algoritmos_JavaScript/tree/main/homes-app-angular" target="_blank">Veja mais</a>
             </div>
+            <div class="project">
+                <h3>Projeto 3</h3>
+                <p>Descrição breve do Projeto 3. No terceiro projeto, foi feito um site com o propósito de criar um workshop para que as pessoas pudessem mostrar os seus projetos. (Clique no "Veja mais" para abrir o site)</p>
+                <a href="https://workshop-2i36.onrender.com" target="_blank">Veja mais</a>
+            </div>
             <!-- Adicione mais projetos conforme necessário -->
         </div>
     </section>
@@ -200,7 +200,7 @@
         </div>
     </section>
     <footer>
-        <div class="footer-content">
+        <div class="container">
             <p>&copy; 2024 Otávio Esboriol da Silva. Todos os direitos reservados.</p>
         </div>
     </footer>
